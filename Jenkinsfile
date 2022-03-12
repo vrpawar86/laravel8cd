@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage("Build") {
             environment {
-                DB_HOST = credentials("20.0.1.254")
-                DB_DATABASE = credentials("laravel")
-                DB_USERNAME = credentials("root")
-                DB_PASSWORD = credentials("q")
+                DB_HOST = ("20.0.1.254")
+                DB_DATABASE = ("laravel")
+                DB_USERNAME = ("root")
+                DB_PASSWORD = ("q")
             }
             steps {
                 sh 'php --version'
@@ -49,8 +49,8 @@ pipeline {
         }
         stage("Docker push") {
             environment {
-                DOCKER_USERNAME = credentials("docker-user")
-                DOCKER_PASSWORD = credentials("docker-password")
+                DOCKER_USERNAME = ("vrpawar86")
+                DOCKER_PASSWORD = ("1211122111Vi")
             }
             steps {
                 sh "docker login --username ${DOCKER_USERNAME} --password ${DOCKER_PASSWORD}"
