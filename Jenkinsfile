@@ -4,9 +4,9 @@ pipeline {
         stage("Build") {
             environment {
                 DB_HOST = ("laravel8bookcd.cwb1jzpmjmgj.ap-south-1.rds.amazonaws.com")
-                DB_DATABASE = ("laravel8bookcd")
+                DB_DATABASE = ("laravel")
                 DB_USERNAME = ("root")
-                DB_PASSWORD = ("1211122111")
+                DB_PASSWORD = ("12345678")
             }
             steps {
                 sh 'php --version'
