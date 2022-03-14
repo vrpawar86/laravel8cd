@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Build") {
             environment {
-                DB_HOST = ("laravel.cwb1jzpmjmgj.ap-south-1.rds.amazonaws.com")
+                DB_HOST = ("laravel1.cwb1jzpmjmgj.ap-south-1.rds.amazonaws.com")
                 DB_DATABASE = ("laravel")
                 DB_USERNAME = ("admin")
                 DB_PASSWORD = ("12345678")
